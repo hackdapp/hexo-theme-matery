@@ -4,15 +4,15 @@ menu:
   Index:
     url: /
     icon: fa-home
-  Tags:
-    url: /tags
-    icon: fa-tags
-  Categories:
-    url: /categories
-    icon: fa-bookmark
-  Archives:
-    url: /archives
-    icon: fa-archive
+  # Tags:
+  #   url: /tags
+  #   icon: fa-tags
+  # Categories:
+  #   url: /categories
+  #   icon: fa-bookmark
+  # Archives:
+  #   url: /archives
+  #   icon: fa-archive
   About:
     url: /about
     icon: fa-user-circle-o
@@ -23,17 +23,17 @@ menu:
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
 cover:
-  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
-  showIndicators: true # 是否显示指示器. # Whether to display the indicators
-  autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
+  showPrevNext: false # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
+  showIndicators: false # 是否显示指示器. # Whether to display the indicators
+  autoLoop: false # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
 
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: true
-  showTitle: true
+  enable: false
+  showTitle: false
   title: 我的梦想
   text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
 
@@ -41,7 +41,7 @@ dream:
 # 是否在首页显示音乐.
 music:
   enable: false
-  showTitle: true
+  showTitle: false
   title: 听听音乐
   fixed: false # 开启吸底模式
   autoplay: false # 是否自动播放
@@ -57,7 +57,7 @@ music:
 # 是否在首页显示视频.
 video:
   enable: false
-  showTitle: true
+  showTitle: false
   title: 精彩视频
   url: # 必填
   pic:
@@ -148,7 +148,7 @@ wordCount:
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
-  enable: true
+  enable: false
 
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
@@ -161,54 +161,54 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
-  data:
-    hexo-theme-matery:
-      icon: fa-meetup
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    zealt:
-        icon: fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/zealot
-        desc: 一个轻量级的SQL和参数动态生成工具库
-    typora-vue-theme:
-        icon: fa-file-text-o
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+  enable: false
+  # data:
+  #   hexo-theme-matery:
+  #     icon: fa-meetup
+  #     iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+  #     url: http://github.com/blinkfox/hexo-theme-matery
+  #     desc: This is a Hexo blog theme with 'Material Design' and responsive design.
+  #   zealt:
+  #       icon: fa-database
+  #       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+  #       url: https://github.com/blinkfox/zealot
+  #       desc: 一个轻量级的SQL和参数动态生成工具库
+  #   typora-vue-theme:
+  #       icon: fa-file-text-o
+  #       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+  #       url: https://github.com/blinkfox/typora-vue-theme
+  #       desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 mySkills:
-  enable: true
-  data:
-    Java:
-      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
-    JavaScript:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 80%
-    CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
-    程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+  enable: false
+  # data:
+  #   Java:
+  #     background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+  #     percent: 85%
+  #   JavaScript:
+  #     background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+  #     percent: 80%
+  #   HTML5:
+  #     background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+  #     percent: 80%
+  #   CSS:
+  #     background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+  #     percent: 70%
+  #   SQL:
+  #     background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+  #     percent: 90%
+  #   程序设计:
+  #     background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
+  #     percent: 75%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
@@ -268,9 +268,9 @@ valine:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
-  title: Fork Me
+  enable: false
+  # url: https://github.com/blinkfox/hexo-theme-matery
+  # title: Fork Me
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
@@ -330,7 +330,7 @@ libs:
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
-featureImages: 
+featureImages:
 - /medias/featureimages/0.jpg
 - /medias/featureimages/1.jpg
 - /medias/featureimages/2.jpg
@@ -376,5 +376,5 @@ featureImages:
   # noreprint（不允许转载 not allowed to reprint）
   # pay（付费转载 pay for reprinting）
 reprint:
-  enable: true # whether enable reprint section 是否启用“转载规则限定模块”
+  enable: false # whether enable reprint section 是否启用“转载规则限定模块”
   default: cc_by
