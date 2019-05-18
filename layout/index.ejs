@@ -59,27 +59,6 @@
                                 <%- strip_html(post.content).substring(0, 120) %>
                             <% } %>
                         </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i><%= date(post.date, config.date_format) %>
-                            </span>
-                            <span class="publish-author">
-                                <% if (post.categories && post.categories.length > 0) { %>
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                <% post.categories.forEach(category => { %>
-                                <a href="<%- url_for(category.path) %>" class="post-category" target="_blank">
-                                    <%- category.name %>
-                                </a>
-                                <% }); %>
-                                <% } else if (post.author && post.author.length > 0) { %>
-
-
-                                <% } else { %>
-
-
-                                <% } %>
-                            </span>
-                        </div>
                     </div>
 
                     <% if(post.tags && post.tags.length > 0) { %>
@@ -89,6 +68,10 @@
                             <span class="chip bg-color"><%= tag.name %></span>
                         </a>
                         <% }); %>
+
+                        <span class="publish-date" style="float:right;margin-right:0px; ">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i><%= date(post.date, config.date_format) %>
+                        </span>
                     </div>
                     <% } %>
                 </div>

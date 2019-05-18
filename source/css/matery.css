@@ -964,6 +964,10 @@ article .article-tags .chip {
     word-wrap:break-word;
 }
 
+#articleContent p .img-item {
+    text-align: left;
+}
+
 #articleContent .img-item {
     text-align: center;
 }
@@ -1757,7 +1761,7 @@ footer .copy-right {
     /* use this value to count block height */
     line-height: 1.5em;
     /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 4.5em;
+    max-height: 7.5em;
     /* fix problem when last visible word doesn't adjoin right side  */
     text-align: justify;
     /* place for '...' */
