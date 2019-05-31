@@ -219,23 +219,23 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner:
-  repo:
+  enable: true
+  owner: hackdapp
+  repo: ptun.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 580230fd6334c4654ed5
+    clientSecret: 3f91c3b703b9a17cae5b95f9b56228c3e30e9878
+  admin: hackdapp
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
 gitment:
   enable: false
-  owner:
-  repo:
+  owner: hackdapp
+  repo: http://ptun.io/
   oauth:
-    clientId:
-    clientSecret:
+    clientId: 580230fd6334c4654ed5
+    clientSecret: 3f91c3b703b9a17cae5b95f9b56228c3e30e9878
 
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
