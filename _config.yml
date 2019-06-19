@@ -4,6 +4,9 @@ menu:
   Index:
     url: /
     icon: fa-home
+  Challege:
+    url: /challege
+    icon: fa-bookmark
   # Tags:
   #   url: /tags
   #   icon: fa-tags
@@ -13,6 +16,7 @@ menu:
   # Archives:
   #   url: /archives
   #   icon: fa-archive
+
   About:
     url: /about
     icon: fa-user-circle-o
