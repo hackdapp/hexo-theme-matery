@@ -217,6 +217,12 @@ header .brand-logo .logo-img {
     padding-bottom: 6px;
 }
 
+header .mp-chat {
+    height: 55px;
+    vertical-align: middle;
+    padding-bottom: 1px;
+}
+
 header .brand-logo .logo-span {
     font-size: 2rem;
 }
